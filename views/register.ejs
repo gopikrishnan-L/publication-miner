@@ -1,18 +1,18 @@
 <%- include('./partials/header') -%>
-    <div id="main">
-        <div id="regbox">
-            <h1 class="object">Register</h1>
+    <div class="main-wrapper">
+        <div class="regbox">
+            <h2 class="input-object">Register</h2>
             <form action="/register" method="POST">
-                <div class="object">
+                <div class="input-object">
                     <label for="user">Username</label>
-                    <input id="user" type="text" name="username">
+                    <input class="reginput" id="user" type="text" name="username">
                 </div>
-                <div class="object">
+                <div class="input-object">
                     <label for="pass">Password</label>
-                    <input id="pass" type="password" name="password">
+                    <input class="reginput" id="pass" type="password" name="password">
                 </div>
-                <div class="object">
-                    <button>Sign Up</button>
+                <div class="buttonbox">
+                    <button class="reg-button">Sign Up</button>
                 </div>
             </form>
         </div>

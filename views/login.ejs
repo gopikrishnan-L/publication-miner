@@ -1,0 +1,21 @@
+<%- include('./partials/header') -%>
+    <div class="main-wrapper">
+        <div class="regbox">
+            <h2 class="input-object">Login</h2>
+            <form action="/login" method="POST">
+                <div class="input-object">
+                    <label for="user">Username</label>
+                    <input class="reginput" id="user" type="text" name="username">
+                </div>
+                <div class="input-object">
+                    <label for="pass">Password</label>
+                    <input class="reginput" id="pass" type="password" name="password">
+                </div>
+                <div class="buttonbox">
+                    <button class="reg-button">Login</button>
+                </div>
+                <a href="/register">Register</a>
+            </form>
+        </div>
+    </div>
+    <%- include('./partials/footer') -%>

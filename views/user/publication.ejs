@@ -1,0 +1,64 @@
+<%- include('../partials/header') -%>
+    <div class="pub-main">
+        <h1>PUBLICATION</h1>
+        <div class="main-wrapper">
+            <form action="/user/publication" method="POST">
+                <div class="pub-box">
+                    <div class="input-object">
+                        <label for="pub-type">type of publication</label>
+                        <select name="pub-type" id="pub-type">
+                            <option value="journal">Journal</option>
+                            <option value="conference">Conference</option>
+                        </select>
+                    </div>
+                    <div class="input-object">
+                        <label for="pubTitle">Title</label>
+                        <input id="pubTitle" name="pubTitle" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="journalName">Journal name</label>
+                        <input id="journalName" name="journalName" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="publisher">Publisher</label>
+                        <input id="publisher" name="publisher" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="issn">ISSN</label>
+                        <input id="issn" name="issn" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="vol">Volume</label>
+                        <input id="vol" name="vol" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="issue">Issue</label>
+                        <input id="issue" name="issue" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="pageno">Page no.</label>
+                        <input id="pageno" name="pageno" type="text">
+                    </div>
+                    <div class="input-object">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" type="date">
+                    </div>
+                    <div class="buttonbox">
+                        <button>Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a href="/user">Cancel</a>
+    </div>
+    <%- include('../partials/footer') -%>
+
+        <!--         
+        title
+        journal name
+        issn
+        date of pub
+        vol
+        issue
+        pageno
+         -->

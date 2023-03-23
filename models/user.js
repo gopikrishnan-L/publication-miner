@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 const Schema = mongoose.Schema
 
+const ROLE = {
+    ADMIN: 'admin',
+    BASIC: 'basic'
+}
 
 const userSchema = Schema({
     username: {
@@ -14,8 +18,8 @@ const userSchema = Schema({
     },
     role: {
         type: String,
-        required: [true, 'Admin cannot be blank']
-    }
+        enum: [ROLE.ADMIN, ROLE.BASIC]
+    },
 })
 
 userSchema.pre('save', async function (next) {

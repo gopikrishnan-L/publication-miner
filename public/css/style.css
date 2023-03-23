@@ -1,44 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap");
+/*100i, 400, 500, 700*/
+
+:root {
+    --primary-color: rgba(201, 247, 249, 0.812);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
+    height: 750px;
+    min-height: fit-content;
+    background: linear-gradient(#64c1e6, #bebdc1);
+}
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    height: 800px;
     align-items: center;
 }
 
-#regbox {
-    border: 2.5px solid black;
+.regbox {
+    /* border: 2.5px solid black; */
     border-radius: 10px;
-    background-color: #bde0fe;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
     height: 500px;
-    box-shadow: 5px 5px 10px #bde0fe;
+    box-shadow: 0px 0px 5px black;
 }
 
-input {
+.reginput {
     border-radius: 5px;
-    border: none;
+    border: 2px solid #64c1e694;
+    font-size: 20px;
 }
 
-.object {
-    width: 300px;
+.input-object {
+    width: 350px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 10px;
     padding: 10px;
 }
 
-button {
-    /* color: white; */
+.buttonbox {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-button {
+    color: white;
     font-size: 25px;
-    background-color: #a2d2ff;
+    background: linear-gradient(#64c1e6, #9280e1);
+    border: 1px solid black;
     border: none;
     border-radius: 10px;
+    padding: 5px;
 }
 
 button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.pub-box {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.pub-main {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.publication-box {
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 700px;
+    background-color: white;
+}
+
+.publication-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.publication-box ul li {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #64c1e694;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.logout-button {
     background-color: black;
     color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }

@@ -1,0 +1,38 @@
+<%- include('../partials/header') -%>
+    <%- include('../partials/navbar') -%>
+        <div class="pub-main">
+            <h1>Publications</h1>
+            <div class="main-wrapper">
+                <div class="publication-list">
+                    <% for(let publication of publications) {%>
+                        <div class="publication-box">
+                            <h3>
+                                <%=publication.title%>
+                            </h3>
+                            <ul>
+                                <li>Journal:
+                                    <%=publication.journal.name%>
+                                </li>
+                                <li>Publisher:
+                                    <%=publication.journal.publisher%>
+                                </li>
+                                <li>ISSN:
+                                    <%=publication.journal.issn%>
+                                </li>
+                                <li>Vol:
+                                    <%=publication.journal.vol%>
+                                </li>
+                                <li>Issue:
+                                    <%=publication.journal.issue%>
+                                </li>
+                                <li>Pages:
+                                    <%=publication.journal.pageno%>
+                                </li>
+                            </ul>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+            <a href="/user/publication">Create new publication</a>
+        </div>
+        <%- include('../partials/footer') -%>
