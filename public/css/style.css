@@ -12,7 +12,7 @@
 body {
     height: 750px;
     min-height: fit-content;
-    background: linear-gradient(#64c1e6, #bebdc1);
+    background: linear-gradient(#2978ffc2, #37ece9);
 }
 
 .main-wrapper {
@@ -114,10 +114,15 @@ button:hover {
 .publication-box ul li {
     padding: 5px;
     border-radius: 5px;
-    background-color: #64c1e694;
     border-bottom: 1px solid black;
     margin-right: 20px;
     font-weight: 500;
+}
+
+.publication-box ul li:last-child {
+    display: flex;
+    gap: 20px;
+    border: none;
 }
 
 .logout-button {

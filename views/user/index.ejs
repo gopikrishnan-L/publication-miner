@@ -19,16 +19,21 @@
                                 <li>ISSN:
                                     <%=publication.journal.issn%>
                                 </li>
-                                <li>Vol:
-                                    <%=publication.journal.vol%>
-                                </li>
-                                <li>Issue:
-                                    <%=publication.journal.issue%>
-                                </li>
-                                <li>Pages:
-                                    <%=publication.journal.pageno%>
+                                <li>
+                                    <section>Vol:
+                                        <%=publication.journal.vol%>
+                                    </section>
+                                    <section>Issue:
+                                        <%=publication.journal.issue%>
+                                    </section>
+                                    <section>Page no:
+                                        <%=publication.journal.pageno%>
+                                    </section>
                                 </li>
                             </ul>
+                            <form action="/user/publication/delete/<%= publication._id %>" method="POST">
+                                <button style="border:none">delete</button>
+                            </form>
                         </div>
                         <% } %>
                 </div>

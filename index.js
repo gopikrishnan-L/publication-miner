@@ -111,6 +111,11 @@ app.post('/logout', (req, res) => {
     res.redirect('/login')
 })
 
+app.post('/user/publication/delete/:id', async (req, res) => {
+    const { id } = req.params;
+    const deletedPub = await Publication.findByIdAndDelete(id)
+    res.redirect('/user')
+})
 app.listen(3000, () => {
     console.log('Listening on port 3000')
 })
